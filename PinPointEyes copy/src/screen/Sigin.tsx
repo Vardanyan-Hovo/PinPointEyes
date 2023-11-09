@@ -1,13 +1,12 @@
-import {Button, View, Text} from 'react-native'
-import {Home} from './Start'
+import {Button, View} from 'react-native'
+import {Home} from './Home'
 
 export default function Sigin()
 {
     return (
-        <View>
+        <form >
             <View style={{height: 15}} />
-            <Text>Sigin PAge</Text>
             {/* <Button title='sobmit' onPress={Home}></Button> */}
-        </View>
+        </form>
     )
 }

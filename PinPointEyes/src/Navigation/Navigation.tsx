@@ -1,93 +1,68 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Home} from '../screen/Home';
-import { Registration } from '../screen/Registration';
-import { createStackNavigator } from '@react-navigation/stack';
+import {Start} from '../screen/Start';
+import  Registration  from '../screen/Registration';
 import ProfileScreen from '../screen/ProfileScreen'
-import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-// const Stack = createNativeStackNavigator();
+import Sigin from '../screen/Sigin';
 
-
-const Stack = createStackNavigator();
-
-//------------------------------------------------------------------------------------------
-// transitionStart
-// React.useEffect(() => {
-//   const unsubscribe = navigation.addListener('transitionStart', (e) => {
-//     // Do something
-//   });
-
-//   return unsubscribe;
-// }, [navigation]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-//--------------------------------------------------------------------------------------------
-
-{/* <Stack.Screen
-  name="Home"
-  component={HomeScreen}
-  options={{
-    headerLeft: (props) => (
-      <MyButton
-        {...props}
-        onPress={() => {
-          // Do something
-        }}
-      />
-    ),
-  }}
-/> */}
-//---------------------------------------------------------------------------------------------------------------------
+const Stack = createNativeStackNavigator();
 // const Navigation = () => {
 //   return (
-//     <Stack.Navigator initialRouteName='Home'       screenOptions={{
-//                                                           headerMode: 'screen',
-//                                                           headerTintColor: 'white',
-//                                                           headerStyle: { backgroundColor: 'tomato' },
-//                                                         }}>
-//       <Stack.Screen   name="Home" component={Home} options={{ title: 'Home Overview' }}  />
-//       <Stack.Screen name="Registration" component={Registration} options={{ title: 'Registration Overview' }} />
+//     <Stack.Navigator initialRouteName="Home" screenOptions={{
+//                                                             headerTintColor: 'white',
+//                                                             headerStyle: { backgroundColor: 'tomato' },
+//                                                           }}>
+//               <Stack.Screen name="Home" component={Home} options={{
+//                                                                     title: 'Awesome app',
+//                                                                   }}/>
+//               {/* <Stack.Screen name="Profile" component={ProfileScreen} options={{
+//                                                                     title: 'My profile',
+//                                                                   }}/> */}
+//               <Stack.Screen name="Registration" component={Registration} options={{
+//                                                                       gestureEnabled: false,
+//                                                                     }}/>
+//               <Stack.Screen name="Sigin" component={Sigin} />
 //     </Stack.Navigator>
 //   );
 // };
+// export default Navigation;
+
+{/* <Stack.Group
+  screenOptions={({ navigation }) => ({
+                                      presentation: 'modal',
+                                      headerLeft: () => <Button title='go back' onPress={navigation.goBack} />,
+                                    })}
+  >
+
+</Stack.Group> */}
 
 
 
-type RootStackParamList = {
-  Home: undefined;
-  Profile: { userId: string };
-  Feed: { sort: 'latest' | 'top' } | undefined;
-};
 
-//---------------------------------------------------------------------------------------------------------------------
-type Props = NativeStackScreenProps<RootStackParamList, 'Profile'> ;
 
-const Navigation = () => {
+
+
+
+const NavigationStack = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Profile" component={ProfileScreen} {this.Props}/>
-      <Stack.Group
-        screenOptions={({ navigation }) => ({
-                                            presentation: 'modal',
-                                            headerLeft: () => <CancelButton onPress={navigation.goBack} />,
-                                          })}
-        >
-        <Stack.Screen name="Settings" component={Settings} />
-        <Stack.Screen name="Share" component={Share} />
-      </Stack.Group>
+    <Stack.Navigator initialRouteName="Start" screenOptions={{
+                                                                  headerTintColor: 'white',
+                                                                  headerStyle: { backgroundColor: 'tomato' },
+                                                                }}>
+      <Stack.Screen name="Start" component={Start} options={{
+                                                                    title: 'Awesome app',
+                                                                  }}/>
+      <Stack.Screen name="Sigin" component={Sigin} options={{
+                                                        gestureEnabled: false,
+                                                      }}/>
+      <Stack.Screen name="Registration" component={Registration} options={{
+                                                        gestureEnabled: false,
+                                                      }}/>
+      <Stack.Screen name="Profile" component={ProfileScreen} options={{
+                                                            title: 'My profile',
+                                                          }}/>
     </Stack.Navigator>
   );
 };
-export default Navigation;
+
+export default NavigationStack;

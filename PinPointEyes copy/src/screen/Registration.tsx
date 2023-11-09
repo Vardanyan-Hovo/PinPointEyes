@@ -1,7 +1,7 @@
 import {ScrollView, Text} from 'react-native'
 
 
-export default function Registration()
+export  function Registration()
 {
 
     // navigation.reset({
