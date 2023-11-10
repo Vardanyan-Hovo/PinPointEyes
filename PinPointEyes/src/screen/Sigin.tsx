@@ -1,5 +1,5 @@
 import {Button, View, Text} from 'react-native'
-import {Home} from './Start'
+import {Home} from './Home'
 
 export default function Sigin()
 {

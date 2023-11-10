@@ -36,3 +36,5 @@ npm install @react-native-masked-view/masked-view
 10)npm install react-redux
 11)npm install react-navigation@4.4.4
 12)npm install  @react-navigation/drawer
+13)npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+14)npm install @react-navigation/stack
