@@ -1,0 +1,40 @@
+path Meschyan
+1)npm init -y
+
+
+2)npm install nodemon --save-dev
+
+3)npm install express
+
+4) for nodemon index.js
+when terminal write 
+node run dev
+//   "scripts": {
+//     "dev": "nodemon index.js"
+//   },
+
+
+5)for the program to know the extension .js  its a file .mjs
+//   "type": "module"
+
+
+finish
+// {
+//   "name": "learnexpresjs",      //program mane
+//   "version": "1.0.0",           //version
+//   "description": "",
+//   "main": "index.js",           //run file for start
+//   "scripts": {
+//     "dev": "nodemon index.js"   //npm run dev
+//   },
+//   "keywords": [],
+//   "author": "",
+//   "license": "ISC",
+//   "devDependencies": {
+//     "nodemon": "^3.0.1"          //for 
+//   },
+//   "dependencies": {              //npm install express
+//     "express": "^4.18.2"         //helps the programmer during development
+//   },
+//   "type": "module"               //for node
+// }

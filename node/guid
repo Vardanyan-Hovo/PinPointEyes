@@ -1,0 +1,48 @@
+Path  meschian
+148
+
+1)npm init
+
+
+2)npm install nodemon --save-dev
+in package.json run "script":"nodemon" 
+it in future re executed "node in terminal"
+
+added this
+package.json{
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+
+change
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+to
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+
+
+  finish
+  
+  // {
+  //   "name": "node",
+  //   "version": "1.0.0",
+  //   "description": "\"for server\"",
+  //   "main": "index.js",
+  //   "scripts": {
+  //     "dev": "nodemon index.js"
+  //   },
+  //   "type": "module",// sey for type mjs  means node
+  //   "author": "",
+  //   "license": "ISC",
+  //   "devDependencies": {
+  //     "nodemon": "^3.0.1"
+  //   }
+  // }
+  
+
+3)npm run dev
+http://localhost:3001/
