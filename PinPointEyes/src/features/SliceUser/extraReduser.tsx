@@ -1,6 +1,6 @@
 // class func dynamoDBTableName() -> String {
 
-//     return "pinpointeyes-mobilehub-160786934-patient"
+//     return ""
 // }
 
 // class func hashKeyAttribute() -> String {
