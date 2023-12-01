@@ -2,8 +2,11 @@ For Create
 install
 1)https://reactnative.dev/docs/typescript
 
+1)Tutorial React Native Authentication | AWS Amplify | Cognito
+https://www.youtube.com/watch?v=Ls1j1b-wPjo
+1a)npx create-expo-app --template
+1b) npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0
 2)cd Name
-
 3)
 npm install @babel/plugin-transform-optional-chaining
 npm install @babel/plugin-transform-numeric-separator
@@ -18,6 +21,30 @@ npm install @babel/plugin-transform-object-rest-spread
 npm install uuid@9
 
 4)npm install axios
+
+
+/*
+change tsconfig.json
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true
+  }
+}
+to tsconfig.json
+{
+    "extends": "expo/tsconfig.base",
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true
+  }
+}
+
+*/
+
+
+
+
 5)npm install @reduxjs/toolkit
 6)npm install @react-navigation/native
 7)npm install @react-navigation/native-stack

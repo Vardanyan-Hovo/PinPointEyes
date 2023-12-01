@@ -2,4 +2,15 @@ Typescript Utility Types | TS Beginners Tutorial
 https://www.youtube.com/watch?v=YN4RoihmVKM
 
 
+For Create
+install
+1)https://reactnative.dev/docs/typescript
+
+1)Tutorial React Native Authentication | AWS Amplify | Cognito
+https://www.youtube.com/watch?v=Ls1j1b-wPjo
+1a)npx create-expo-app --template
+1b) npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0
+2)cd Name
+3)
+
 
